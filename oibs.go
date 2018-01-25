@@ -21,7 +21,23 @@ import (
 	var str_P = "BjH+pEP5ZYgTzmhn2zAlf5nHt6T+F+uJX6BrTePi2EoVypoZYWyjHS/J/eqW3zODZ4Q0mFWb5yMs9nHoyuhqdQE="
 	//系统主密钥s 由Bytes导出
 	var str_s = "VbZDgs8v+Tm5g7cK16eZVdDTGV4="
+
+
+	//根据ID提取对应身份的私钥
+	func extractPriKeyById(ID string) string {
+		params,_ := pbc.NewParamsFromString(str_params)
+		pairing := params.NewPairing()
+		s_bytes,_ := base64.StdEncoding.DecodeString(str_s)
+		s := pairing.NewZr().SetBytes(s_bytes)
+		Qid := pairing.NewG1().SetFromStringHash(ID,sha256.New())
+		Did := pairing.NewG1().MulZn(Qid,s)
+		str_Did:= base64.StdEncoding.EncodeToString(Did.Bytes())
+		return str_Did
+	}
+
 func main() {
+	itest := extractPriKeyById("湖北工业大学")
+	fmt.Println(itest)
     // The authority generates system parameters
     // params := pbc.GenerateA(160, 512)
 	fmt.Println("\n\n一种改进的基于身份的签名方案\n\n")
