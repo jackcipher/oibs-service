@@ -1,5 +1,19 @@
-# oibs-service
-![Travis](https://img.shields.io/travis/rust-lang/rust.svg)![done](http://progressed.io/bar/18?title=done)
+<p align="center">
+<img src="https://github.com/youzan/zanphp.io/blob/master/src/img/zan-logo-small@2x.png?raw=true" alt="zanphp logo" srcset="https://github.com/youzan/zanphp.io/blob/master/src/img/zan-logo-small.png?raw=true 1x, https://github.com/youzan/zanphp.io/blob/master/src/img/zan-logo-small@2x.png?raw=true 2x, https://github.com/youzan/zanphp.io/blob/master/src/img/zan-logo-small.png?raw=true" width="210" height="210">
+</p>
+
+<p align="center">基于 PBC Library的在线数字签名服务，面向Web服务提供开箱即用的Restful API接口。</p>
+<p align="center">所采用的签名方案，在随机预言机模型下的可证明安全</p>
+
+
+
+[![License](https://img.shields.io/badge/license-mit-blue.svg)](LICENSE)
+![done](http://progressed.io/bar/18?title=done)
+
+
+
+
+
 
 ## Optimised Identity-based Signature Service
 
