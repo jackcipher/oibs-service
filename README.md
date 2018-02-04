@@ -19,7 +19,9 @@
 
 ## Optimised Identity-based Signature Service
 
-OIBS 是一种在线的Restful API服务，用户对消息进行基于身份的签名。
+Identity-based Signature是指基于身份的数字签名。OIBS是我提出的一种高效的、在随机寓言机模型下可证明安全的基于身份的数字签名方案。前期我使用了C语言在PBC密码学配对库中得到了比较好的仿真结果。为了更好地将该签名方案应用至Web系统。我继续在Golang中完成仿真实验，并不断地优化，提取核心的签名和认证功能。
+
+OIBSS就是这种开箱即用的在线Restful API服务。本服务对普通用户是透明的，使得开发者只需专注业务本身。
 
 本服务提供，消息签名、消息认证两大主要功能。
 
