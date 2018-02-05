@@ -8,10 +8,11 @@
 
 
 
+<p align="center">
 
 [![License](https://img.shields.io/badge/license-mit-blue.svg)](LICENSE)
 ![done](http://progressed.io/bar/18?title=done)
-
+</p>
 
 
 
