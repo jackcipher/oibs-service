@@ -28,6 +28,10 @@ OIBSS就是这种开箱即用的在线Restful API服务。本服务对普通用�
 
 
 
+## OIBS签名方案
+
+![](http://math.qiniudn.com/FlJ8oHV94TOlKlWtgXAvMrKkpmcm.png)
+
 
 
 ## 依赖类库
